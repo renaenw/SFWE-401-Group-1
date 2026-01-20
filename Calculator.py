@@ -1,38 +1,40 @@
 import math
 
-def calculator():
-    print("Calculator with Math Library")
-    print("\nBasic Operations:")
-    print(" +    Addition")
-    print(" -    Subtraction")
-    print(" *    Multiplication")
-    print(" /    Division")
-    print("\nMath Operations:")
-    print(" sqrt Square root")
-    print(" pow  Power")
-    print(" log  Logarithm (base 10)")
-    print(" fact Factorial")
+# Made by Robert Taylor 
 
+def calculator():
+    
+    print("Calculator")
+    print("Please choose the math operation you want to do")
+    print("add")
+    print("subtract")
+    print("multiply")
+    print("division")
+    print("sqrt ")
+    print("pow")
+    print("log (log in base 10) ")
+    print("fact")
+#Start of all the operations 
     while True:
         operator = input("\nEnter operation: ").lower()
-
+        #Here we have our basic operation of + - * / 
         try:
-            if operator in ["+", "-", "*", "/"]:
+            if operator in ["add", "subtract", "multiply", "division"]:
                 num1 = float(input("Enter first number: "))
                 num2 = float(input("Enter second number: "))
 
-                if operator == "+":
+                if operator == "add":
                     result = num1 + num2
-                elif operator == "-":
+                elif operator == "subtract":
                     result = num1 - num2
-                elif operator == "*":
+                elif operator == "multiply":
                     result = num1 * num2
-                elif operator == "/":
+                elif operator == "division":
                     if num2 == 0:
-                        print("Error: Division by zero")
+                        print("Error: division by zero")
                         continue
                     result = num1 / num2
-
+        #Here are all of the operation we need to do of square root, exponents, log, factorial
             elif operator == "sqrt":
                 num = float(input("Enter number: "))
                 if num < 0:
@@ -64,16 +66,25 @@ def calculator():
                 continue
 
             print(f"Result: {result}")
-
+        #Here is the error catch for if the input is not vaild
         except ValueError:
             print("Invalid input")
         except Exception as e:
             print(f"Error: {e}")
 
+        #This will restart the loop if the user will want to start again or if they just want it to end
         choice = input("\nContinue? (y/n): ").lower()
         if choice != "y":
             print("Calculator closed.")
             break
 
 
-calculator()
+
+
+
+#this calls the function of calcuator 
+def main():
+    calculator()
+
+if __name__ == "__main__":
+    main()
