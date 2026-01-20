@@ -5,7 +5,7 @@ import math
 def calculator():
     
     print("Calculator")
-    print("Please choose the math operation you want to do")
+    print("Please choose the math operation you want to do:")
     print("add")
     print("subtract")
     print("multiply")
