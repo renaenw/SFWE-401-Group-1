@@ -79,9 +79,6 @@ def calculator():
             break
 
 
-
-
-
 #this calls the function of calcuator 
 def main():
     calculator()
