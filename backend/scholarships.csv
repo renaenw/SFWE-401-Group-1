@@ -1,0 +1,10 @@
+id,name,status,amount,deadline,major,gpa,year, ps
+1,Biomedical Engineering Excellence,open,$5000,2026-01-15,Biomedical Engineering,3.5,Junior,yes
+2,Electrical Engineering Research Award,open,$3000,2025-12-01,Electrical Engineering,3.7,Senior,no 
+3,STEM Innovators,closed,$10000,2025-11-01,System Engineering,3.8,Senior,yes
+4,Engineering Leaders,open,$4000,2026-02-20,Nuclear Engineering,3.6,Junior,yes
+5,Software Engineering Scholars Fund,open,$2500,2025-10-15,Software Engineering,3.5,Freshman,no
+6,Chemical Engineering Achievers,open,$3500,2025-12-31,Chemical Engineering,3.4,Junior,yes
+7,Engineering Excellence Award,open,$4500,2026-03-10,Engineering,3.9,Senior,yes
+8,Engineering Talent Grant,open,$2000,2025-09-30,Engineering,3.2,Senior,no
+9,Mechanical Engineering Future Tech Leaders,open,$6000,2026-04-01,Mechanical Engineering,3.7,Junior,yes
