@@ -4,7 +4,7 @@ This project is made used React, RESTAPi, Springboot and also Maven. The front e
 
 The way to launch this program is:
 
-1.Go to this link: https://github.com/MasonNjos/SFWE301
+
 
 2.Click on the Green Button that says "< > Code"
 
