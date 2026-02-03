@@ -1,0 +1,218 @@
+/* Main layout */
+.advisor-main {
+  margin: 40px auto;
+  transform: scale(1.05);
+  font-size: 2.5rem;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;  
+  gap: 24px;
+  box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif; 
+text-align: left;
+
+}
+
+
+
+
+
+
+.card-account-request {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 18px 20px;
+  box-sizing: border-box;
+}
+
+.card-account-request h2 {
+  margin: 0 0 6px 0;
+  font-size: 2.5rem;
+  color: #000000;
+}
+
+
+.application-reports {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 18px 20px;
+  box-sizing: border-box;
+}
+
+
+
+.table-request-table,
+.scholarship-table {
+  width: 100%;
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+.table-request-table thead,
+.scholarship-table thead {
+  background: #f3f4f6;
+}
+
+.table-request-table th,
+.table-request-table td,
+.scholarship-table th,
+.scholarship-table td {
+  padding: 8px 10px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table-request-table th,
+.scholarship-table th {
+  font-weight: 600;
+  color: #444;
+}
+
+.table-request-table tbody tr:hover,
+.scholarship-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+/* Action buttons in table */
+.Scholarship-decision {
+  display: flex;
+  gap: 6px;
+}
+
+/* Buttons (generic) */
+.button-approve,
+.button-deny,
+.button-generate-report,
+.button-send-notification,
+.submit-button {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button-approve:active,
+.button-deny:active,
+.button-generate-report:active,
+.button-send-notification:active,
+.submit-button:active {
+  transform: translateY(1px);
+}
+
+/* Specific button colors */
+.button-approve {
+  background: #22c55e;
+  color: #fff;
+}
+
+.button-approve:hover {
+  background: #16a34a;
+}
+
+.button-deny {
+  background: #ef4444;
+  color: #fff;
+}
+
+.button-deny:hover {
+  background: #dc2626;
+}
+
+.button-generate-report {
+  margin-top: 10px;
+  background: #4b5563;
+  color: #fff;
+}
+
+.button-generate-report:hover {
+  background: #374151;
+}
+
+.button-send-notification,
+.submit-button {
+  background: #4c6fff;
+  color: #fff;
+}
+
+.button-send-notification:hover,
+.submit-button:hover {
+  background: #3b5bdb;
+}
+
+/* Filters / inputs */
+.report-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 14px 0;
+}
+
+.filter-field {
+  display: flex;
+  flex-direction: column;
+  min-width: 160px;
+}
+
+.filter-field p {
+  margin: 0 0 4px 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #444;
+}
+
+.advisor-main input,
+.advisor-main select,
+.advisor-main textarea {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  background: #fff;
+}
+
+.advisor-main input:focus,
+.advisor-main select:focus,
+.advisor-main textarea:focus {
+  border-color: #4c6fff;
+  box-shadow: 0 0 0 2px rgba(76, 111, 255, 0.2);
+  outline: none;
+}
+
+
+.category-select {
+  max-width: 220px;
+}
+
+
+.notification-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.notification-field textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Extra form row at bottom */
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.form-row textarea {
+  min-height: 80px;
+}
+
+.table-request-table td,
+.scholarship-table td {
+  word-wrap: break-word;
+}

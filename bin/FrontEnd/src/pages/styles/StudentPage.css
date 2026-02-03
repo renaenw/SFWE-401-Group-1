@@ -1,0 +1,150 @@
+/* Container */
+:root{
+  --bg: ##001148;
+  --card-accent: #001148;
+  --muted: #001148;
+  --shadow-1: 0 6px 18px rgba(15, 23, 42, 0.06);
+  --shadow-2: 0 10px 30px rgba(15, 23, 42, 0.08);
+  --accent: #f30107;
+  --success: #10b981;
+  --danger: #ef4444;
+  --soon: #f59e0b; 
+}
+
+/* Container */
+.Top-Horziontal-Boxes {
+  display: flex;
+  gap: 1.25rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+/* Each Box (card-like info) */
+.Top-Box {
+  flex: 1 1 200px;
+  min-width: 200px;
+  background: var(--card-accent);
+  padding: 1.25rem;
+  border-radius: 14px;
+  box-shadow: var(--shadow-1), var(--shadow-2);
+  border: 1px solid rgba(255,255,255,0.25);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.35rem;
+}
+
+/* Number inside the top box */
+.Top-Box p {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.content > form input[type="text"]{
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.content > form button[type="submit"]{
+  background: #f30107;
+}
+
+/* Scholarship Cards Container - stacked vertically */
+.Scholarship-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Individual Scholarship Card */
+.Scholarship {
+  background: var(--bg);
+  padding: 1.25rem 1.25rem 1.25rem 1.9rem; /* extra left padding for accent stripe */
+  border-radius: 16px;
+  box-shadow: var(--shadow-1);
+  border: 1px solid rgba(2,6,23,0.04);  
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+
+/* subtle left accent stripe */
+.Scholarship::before{
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 6px;
+  background:  rgba(0, 17, 72);
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+/* Scholarship content */
+.Scholarship p{
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding-left: 10px; /* offset from accent stripe */
+}
+
+.status-badge{
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: white;
+  margin-left: 0.5rem;
+}
+
+.status-badge.open{background: var(--success); color: #04402a;}
+.status-badge.closed{background: rgba(99,102,241,0.12); color: #4f46e5; font-weight:700; border: 1px solid rgba(79,70,229,0.12);}
+.status-badge.soon{background: var(--soon); color: #4a2e00;}
+
+/* Action button */
+.scholar-ship-button{
+  margin-left: 10px;
+  background: #f30107;
+  border: none;
+  color: white;
+  padding: 0.rem 0.9rem;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 10px 18px rgba(14,165,233,0.12);
+}
+
+.scholar-ship-button:hover{transform: translateY(-3px)}
+
+.money-info{
+  color: #04263b;
+  font-weight: 800;
+  padding-left: 10px;
+}
+
+.date-info{
+  color: var(--muted);
+  font-size: 0.92rem;
+  padding-left: 10px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 520px){
+  .Top-Horziontal-Boxes{gap:0.75rem}
+  .Top-Box{padding:1rem}
+  .Scholarship{padding:1rem}
+}
+

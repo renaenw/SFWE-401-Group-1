@@ -1,0 +1,4 @@
+id,name,status,amount,deadline,major,gpa,year
+1,Computer Science Excellence,open,$5000,2026-01-15,Computer Science,3.5,Junior
+2,Biology Research Award,open,$3000,2025-12-01,Biology,3.7,Senior
+3,STEM Innovators,closed,$10000,2025-11-01,Engineering,3.8,Senior
