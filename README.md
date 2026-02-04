@@ -28,7 +28,7 @@ In the first IDE open the terminal and run
 
 11.cd backend
 
-12..\mvnw spring-boot:run
+12../mvnw spring-boot:run
 
 13.The terminal will start and you know it is done when you start to see Springboot in the terminal
 
